@@ -1,0 +1,46 @@
+[
+  {
+    "name": "arroz",
+    "unit": "kg"
+  },
+  {
+    "name": "fideos",
+    "unit": "paquetes"
+  },
+  {
+    "name": "cafe",
+    "unit": "paquetes"
+  },
+  {
+    "name": "azucar",
+    "unit": "kg"
+  },
+  {
+    "name": "queso",
+    "unit": "gr"
+  },
+  {
+    "name": "jamon",
+    "unit": "gr"
+  },
+  {
+    "name": "champiñones",
+    "unit": "bandejas"
+  },
+  {
+    "name": "huevos",
+    "unit": "unidad"
+  },
+  {
+    "name": "cervezas",
+    "unit": "unidad"
+  },
+  {
+    "name": "leche",
+    "unit": "litros"
+  },
+  {
+    "name": "carne molida",
+    "unit": "bandejas"
+  }
+]
