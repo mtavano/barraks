@@ -15,7 +15,7 @@ import (
 
 func main() {
   items := getSeedData("./data.json")
-  store, err := database.NewStore("../barraks.db")
+  store, err := database.NewStore("../server/barraks.db")
   if err != nil {
     log.Fatal(err)
   }
@@ -27,9 +27,9 @@ func seedDatabase(db *database.Store, items []barraks.Item) {
   for _, item := range items {
     err := db.Insert(item)
     if err != nil {
-      log.Fatal(err)
+      log.Fatalf("[FAIL] INSERT\n %s", err.Error())
     }
-    fmt.Printf("Insert correctly")
+    fmt.Printf("[OK] INSERT")
     printStruct(item)
   }
 }

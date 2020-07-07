@@ -4,7 +4,7 @@ GO ?= go
 
 run r:
 	@echo "[RUN] Running [barraks]"
-	@$(GO) run cmd/main.go
+	@$(GO) run cmd/server/main.go
 
 run-bin rb:
 	@echo "[RUN] Running bin [barraks]"
@@ -12,7 +12,7 @@ run-bin rb:
 
 build b: clean
 	@echo "[BUILD] Building [barraks]..."
-	@cd cmd && $(GO) build -o $(BIN)
+	@cd cmd/server && $(GO) build -o $(BIN)
 
 seed s:
 	@echo "[SEED] Seeding [barraks]..."
@@ -20,7 +20,7 @@ seed s:
 
 migrate-up m:
 	@echo "[MIGRATE] Migrating up [barraks]..."
-	@cd database/migrations && goose sqlite3 ../../cmd/barraks.db up
+	@cd database/migrations && goose sqlite3 ../../cmd/server/barraks.db up
 
 
 clean c:
